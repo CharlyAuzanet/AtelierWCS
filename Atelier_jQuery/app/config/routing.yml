@@ -1,0 +1,4 @@
+jquery:
+    resource: "@JqueryBundle/Resources/config/routing.yml"
+    prefix:   /
+

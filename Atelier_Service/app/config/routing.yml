@@ -1,0 +1,4 @@
+slug:
+    resource: "@SlugBundle/Resources/config/routing.yml"
+    prefix:   /
+

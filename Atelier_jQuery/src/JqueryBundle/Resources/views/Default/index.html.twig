@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+    <span id="heure"></span>
+
+
+
+
+
+    {#
+
+    <img src="https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/3/3f/Lord_Jaraxxus%28406%29.png/250px-Lord_Jaraxxus%28406%29.png?version=8f0bfc93ae738180da6c8752767c1df4" id="img5">
+    <img id="img4"src="https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/4/4f/Lady_Liadrin%2831127%29.png/250px-Lady_Liadrin%2831127%29.png?version=0092045e0fe6588db62c85d1bc26740e">
+    <img id="img3" src="http://www.osnovnasolasostro.si/ucenci/16-17/9a_koncar_zan/www/slike/250px-Rexxar%28484%29.png">
+    <img id="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXLOK-8tDCK02rHb_U6zLXNwk0XqLXyx4cgcvoE2yWxh_GHHv">
+    <img id="img1" src="https://2.bp.blogspot.com/-AF8mG5mDXYE/VsUF5HuWO0I/AAAAAAAAAKg/k_AGxKk0HUg/s1600/2828-heroframe.png">
+#}
+
+
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+            function Horloge() {
+                var laDate = new Date();
+                var h = laDate.getHours() + ":" + laDate.getMinutes() + ":" + laDate.getSeconds();
+                $('#heure').text(h);
+            }
+            setInterval(Horloge, 1000);
+        });
+    </script>
+{% endblock %}

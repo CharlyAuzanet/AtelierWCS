@@ -1,0 +1,24 @@
+article_index:
+    path:     /
+    defaults: { _controller: "SlugBundle:Article:index" }
+    methods:  GET
+
+article_show:
+    path:     /{slug}/show
+    defaults: { _controller: "SlugBundle:Article:show" }
+    methods:  GET
+
+article_new:
+    path:     /new
+    defaults: { _controller: "SlugBundle:Article:new" }
+    methods:  [GET, POST]
+
+article_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SlugBundle:Article:edit" }
+    methods:  [GET, POST]
+
+article_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SlugBundle:Article:delete" }
+    methods:  DELETE

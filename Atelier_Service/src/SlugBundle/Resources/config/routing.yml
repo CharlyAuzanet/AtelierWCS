@@ -1,0 +1,7 @@
+slug_article:
+    resource: "@SlugBundle/Resources/config/routing/article.yml"
+    prefix:   /article
+
+slug_homepage:
+    path:     /
+    defaults: { _controller: SlugBundle:Default:index }
